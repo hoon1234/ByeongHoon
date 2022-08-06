@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+}
+
+.navbar_clon{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 8px 25px;
+    justify-content: space-between; /* 중간에 스페이스 공간 허용*/  
+    background-color: thistle;
+}
+
+
+.navbar_home i{
+    font-size: 24px;
+    color: rgb(241, 117, 200);
+}
+
+a {
+    text-decoration: none;   
+}
+
+.navbar_main{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_main li {
+    padding: 8px 12px;
+}
+
+.navbar_main li:hover{
+    background-color: rgba(248, 124, 227, 0.925);
+    border-radius: 10px; /* 사각형 테두리 둥글게 만들기 */
+}
+
+.navbar_icons {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_icons li{
+    padding: 8px 12px;
+}
+
+.navbar_toggleBtn{
+    display: none;
+    position: absolute;
+    right: 35px;
+    font-size: 24px;
+    color: rgba(248, 124, 227, 0.925);
+}
+
+/* 반응형만들기 */
+@media screen and (max-width:768px){
+    .navbar_clon{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_main{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_main li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_toggleBtn {
+        display: block;
+    }
+
+    .navbar_main.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+
+}
