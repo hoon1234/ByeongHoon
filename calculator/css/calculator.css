@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* 글씨체*/
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    width: 400px; /* 너비 */
+    height: 450px; /* 높이 */
+    padding: 15px; /* 테두리와 내용 사이의 여백*/   
+    border-radius: 10px;
+    margin: 0 auto; /*가운데 정렬*/
+    position: relative;
+    background-color: hsl(194, 79%, 78%); /*배경색*/
+}
+
+.btn{    
+  position: relative;
+  width:90px; /* 너비 */
+  height: 70px; /* 높이 */
+  font-size: 30px;   /* 글자 크기 */
+  margin: 0 auto; /*가운데 정렬*/
+}
+
+.answer{   
+    margin: 0 auto; /*가운데 정렬*/
+    grid-column: 1 / -1;    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: aquamarine;
+    width: 350px;
+    height: 40px;
+  }
+
+  .answer .previous-operand{
+    color: white;
+    font-size: 30px; /* 글자크기 */
+  }
+
+  .answer .current-operand{
+    color: white;
+    font-size: 25px; /* 글자크기 */
+  }
