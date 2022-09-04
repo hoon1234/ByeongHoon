@@ -5,4 +5,4 @@
 | HTML CSS JavaScript |
 | ------------------- |
 | ![image](https://user-images.githubusercontent.com/85986176/188304935-0533d454-c119-41c3-8a36-9f9682994662.png) | 
-
+| HTML : 계산기의 구조 , CSS : 계산기 이미지 작업,  JavaScript : 계산기의 동적기능. |
